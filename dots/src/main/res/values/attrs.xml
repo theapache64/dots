@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Dots">
+        <attr name="count" format="integer" />
+        <attr name="active_dot_color" format="color" />
+        <attr name="inactive_dot_color" format="color" />
+        <attr name="speed" format="integer" />
+        <attr name="radius" format="integer" />
+        <attr name="margin" format="integer" />
+    </declare-styleable>
+</resources>
