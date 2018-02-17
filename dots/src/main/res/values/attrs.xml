@@ -5,7 +5,7 @@
         <attr name="active_dot_color" format="color" />
         <attr name="inactive_dot_color" format="color" />
         <attr name="speed" format="integer" />
-        <attr name="radius" format="integer" />
-        <attr name="margin" format="integer" />
+        <attr name="radius" format="dimension" />
+        <attr name="margin" format="dimension" />
     </declare-styleable>
 </resources>

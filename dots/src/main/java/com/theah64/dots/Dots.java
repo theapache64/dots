@@ -77,8 +77,8 @@ public class Dots extends LinearLayout {
             inactiveColor = ta.getColor(R.styleable.Dots_inactive_dot_color, ContextCompat.getColor(context, DEFAULT_INACTIVE_COLOR));
             activeColor = ta.getColor(R.styleable.Dots_active_dot_color, activeColor);
             speed = ta.getInt(R.styleable.Dots_speed, DEFAULT_SPEED);
-            radius = ta.getInt(R.styleable.Dots_radius, DEFAULT_RADIUS);
-            margin = ta.getInt(R.styleable.Dots_radius, DEFAULT_MARGIN);
+            radius = (int) ta.getDimension(R.styleable.Dots_radius, DEFAULT_RADIUS);
+            margin = (int) ta.getDimension(R.styleable.Dots_margin, DEFAULT_MARGIN);
             ta.recycle();
         }
 
