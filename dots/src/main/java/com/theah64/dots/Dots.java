@@ -9,6 +9,7 @@ import android.support.annotation.ColorInt;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -86,12 +87,20 @@ public class Dots extends LinearLayout {
 
     }
 
+    private boolean isAnimating = false;
 
     public void setActive(int activeIndex) {
 
         if (activeIndex >= count) {
             throw new IllegalArgumentException("Invalid index" + activeIndex + " , size is " + count);
         }
+
+        if (isAnimating) {
+            Log.d("X", "Animation going on....");
+            return;
+        }
+
+        isAnimating = true;
 
         //Setting current to inactive
         final View currentDot = getChildAt(lastActiveIndex);
@@ -127,8 +136,7 @@ public class Dots extends LinearLayout {
 
                                     @Override
                                     public void call(Animator animator) {
-
-
+                                        isAnimating = false;
                                     }
 
                                 }).playOn(newDot);
