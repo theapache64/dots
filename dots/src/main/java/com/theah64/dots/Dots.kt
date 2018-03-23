@@ -114,7 +114,7 @@ class Dots : LinearLayout {
 
         for (i in 0 until count) {
 
-            val dot = inflater.inflate(R.layout.dot_row, parent as ViewGroup, false)
+            val dot = inflater.inflate(R.layout.dot_row, this, false)
             val params = LinearLayout.LayoutParams(radius, radius)
             params.setMargins(margin, margin, margin, margin)
             dot.layoutParams = params
