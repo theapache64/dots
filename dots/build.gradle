@@ -50,6 +50,10 @@ android {
 
 }
 
+tasks.withType(Javadoc).all {
+    enabled = false
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
