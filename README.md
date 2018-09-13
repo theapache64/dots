@@ -3,6 +3,12 @@
 ![](https://i.stack.imgur.com/xiuoj.jpg)
 
 
+### Install
+
+```groovy
+implementation 'com.theah64.dots:dots:1.0.5'
+```
+
 ### Usage
 
 ```xml
