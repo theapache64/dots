@@ -21,7 +21,7 @@
 ### Methods
 
 
-```java
+```kotlin
 // To set a dot active
 fun setActive(activeIndex: Int)
 
