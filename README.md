@@ -1,6 +1,9 @@
 # dots
 
-## Usage
+![](https://i.stack.imgur.com/xiuoj.jpg)
+
+
+### Usage
 
 ```xml
 <com.theah64.dots.Dots
@@ -15,6 +18,19 @@
   app:radius="10dp" />
 ```
 
-## Output
+### Methods
 
-![](https://i.stack.imgur.com/xiuoj.jpg)
+
+```java
+// To set a dot active
+fun setActive(activeIndex: Int)
+
+// To set number of dots
+fun setCount(count: Int)
+
+// To move active dot to back
+fun moveBack()
+
+// To move active dot to forward 
+fun moveForward()
+```
